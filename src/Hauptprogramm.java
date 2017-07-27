@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.TreeSet;
 
 
 public class Hauptprogramm {
@@ -32,7 +33,7 @@ public class Hauptprogramm {
 		SetRechteck setrechteck = new SetRechteck();*/
 		
 		Rechteck eck1 = new Rechteck(15,34);
-		Rechteck eck2 = new Rechteck(15,34);
+		Rechteck eck2 = new Rechteck(16,35);
 		/*setrechteck.rechteckhinzufuegen(eck1);
 		setrechteck.rechteckhinzufuegen(eck2);
 		setrechteck.rechteckhinzufuegen(eck1);
@@ -66,6 +67,14 @@ public class Hauptprogramm {
 		treetest.rechteckHinzufuegen(eck3);
 		treetest.rechteckHinzufuegen(eck4);
 		treetest.rechteckHinzufuegen(eck2);
+		
+		TreeSet<Rechteck> baum = new TreeSet<Rechteck>();
+		baum.add(eck1);
+		baum.add(eck2);
+		baum.add(eck3);
+		
+		System.out.println(baum.size());
+		
 	
 	}
 

@@ -1,5 +1,5 @@
 
-public class Rechteck implements Comparable {
+public class Rechteck implements Comparable<Object> {
 	
 	double laenge;
 	double breite;
@@ -24,21 +24,22 @@ public class Rechteck implements Comparable {
         // Typumwandlung zur Klasse Punkt
         Rechteck compareRechteck = (Rechteck)compareObject;
         // Vergleich auf Gleichheit
-        if((this.breite*this.laenge) == (compareRechteck.breite*compareRechteck.laenge))
+        if(this.breite == compareRechteck.breite)
         {
-            compareValue = 0;
+            return 0;
         }
         // Vergleich auf kleiner
-        if((this.breite*this.laenge) < (compareRechteck.breite*compareRechteck.laenge))
+        if(this.breite < compareRechteck.breite)
         {
             compareValue = -1;
         }
         // Vergleich auf grš§er
-        if((this.breite*this.laenge) > (compareRechteck.breite*compareRechteck.laenge))
+        if(breite > compareRechteck.breite)
         {
             compareValue = 1;
         }
-		return 0;
+        
+		return (int)(100*Math.random());
 	}
 	
 }
