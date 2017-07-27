@@ -3,7 +3,7 @@ import java.util.HashSet;
 
 public class SetRechteck {
 	
-	HashSet<Rechteck> rechtecke;
+	private HashSet<Rechteck> rechtecke;
 	
 	public SetRechteck(){
 		rechtecke = new HashSet<Rechteck>();

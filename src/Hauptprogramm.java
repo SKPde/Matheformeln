@@ -38,6 +38,8 @@ public class Hauptprogramm {
 		setrechteck.rechteckhinzufuegen(eck1);
 		setrechteck.rechteckhinzufuegen(eck1);
 		
+		System.out.println("LŠnge: " + eck1.laenge +" Breite: " + eck1.breite + " ID: " + eck1.getID());
+		System.out.println("LŠnge: " + eck2.laenge +" Breite: " + eck2.breite + " ID: " + eck2.getID());
 		
 		/*while(true){
 			System.out.print("Bitte Zahl eingeben: ");
