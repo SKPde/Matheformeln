@@ -29,5 +29,10 @@ public class SetHashmap {
 			
 		}
 		
+		System.out.println("--------------------------------------");
+		
+		for(int x = 0; x < rechtmap.size(); x++){
+			System.out.println("SchlŸssel: " + x + " Breite: " + rechtmap.get(x).breite + " LŠnge: " + rechtmap.get(x).laenge);
+		}
 	}
 }

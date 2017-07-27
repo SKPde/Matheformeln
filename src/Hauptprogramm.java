@@ -49,14 +49,23 @@ public class Hauptprogramm {
 		
 		Rechteck eck3 = new Rechteck(10,25);
 		Rechteck eck4 = new Rechteck(18,7); 
-		SetHashmap maptest = new SetHashmap();
+		
+		/*SetHashmap maptest = new SetHashmap();
 		maptest.setRechtmap(eck1);
 		maptest.setRechtmap(eck2);
 		maptest.setRechtmap(eck3);
 		maptest.setRechtmap(eck4);
 		maptest.setRechtmap(eck2);
 		
-		maptest.durchlaufeRechtmap();
+		maptest.durchlaufeRechtmap();*/
+		
+		TreeSetTest treetest = new TreeSetTest();
+		
+		treetest.rechteckHinzufuegen(eck1);
+		treetest.rechteckHinzufuegen(eck2);
+		treetest.rechteckHinzufuegen(eck3);
+		treetest.rechteckHinzufuegen(eck4);
+		treetest.rechteckHinzufuegen(eck2);
 	
 	}
 

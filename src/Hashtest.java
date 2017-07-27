@@ -20,6 +20,5 @@ public class Hashtest {
 		} else{
 			System.out.println("HinzufŸgen fehlgeschagen!");
 		}		
-		
 	}
 }

@@ -1,5 +1,5 @@
 
-public class Rechteck {
+public class Rechteck implements Comparable {
 	
 	double laenge;
 	double breite;
@@ -15,6 +15,30 @@ public class Rechteck {
 	
 	public int getID(){
 		return this.idrechteck;
+	}
+
+	@Override
+	public int compareTo(Object compareObject) {
+		 // RŸckgabewert
+        int compareValue =-2;
+        // Typumwandlung zur Klasse Punkt
+        Rechteck compareRechteck = (Rechteck)compareObject;
+        // Vergleich auf Gleichheit
+        if((this.breite*this.laenge) == (compareRechteck.breite*compareRechteck.laenge))
+        {
+            compareValue = 0;
+        }
+        // Vergleich auf kleiner
+        if((this.breite*this.laenge) < (compareRechteck.breite*compareRechteck.laenge))
+        {
+            compareValue = -1;
+        }
+        // Vergleich auf grš§er
+        if((this.breite*this.laenge) > (compareRechteck.breite*compareRechteck.laenge))
+        {
+            compareValue = 1;
+        }
+		return 0;
 	}
 	
 }
