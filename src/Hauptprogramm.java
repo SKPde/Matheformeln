@@ -28,13 +28,22 @@ public class Hauptprogramm {
 		System.out.println(Zahlenverarbeitung.flaecheDreieck(5, 3, 7));*/
 		
 		Hashtest settest = new Hashtest();
-
 		
-		while(true){
+		SetRechteck setrechteck = new SetRechteck();
+		
+		Rechteck eck1 = new Rechteck(15,34);
+		Rechteck eck2 = new Rechteck(15,34);
+		setrechteck.rechteckhinzufuegen(eck1);
+		setrechteck.rechteckhinzufuegen(eck2);
+		setrechteck.rechteckhinzufuegen(eck1);
+		setrechteck.rechteckhinzufuegen(eck1);
+		
+		
+		/*while(true){
 			System.out.print("Bitte Zahl eingeben: ");
 			settest.zahlhinzufuegen(in.nextInt());
 			System.out.println("Grš§e: " + settest.test.size());
-		}
+		}*/
 		
 	
 	}

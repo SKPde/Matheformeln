@@ -14,7 +14,12 @@ public class Hashtest {
 		boolean zugefuegt = false;
 		
 		zugefuegt = test.add(zahl);
-		System.out.println(zahl + " wurde eingefŸgt:) " + zugefuegt);
+		
+		if(zugefuegt == true){
+			System.out.println(zahl + " wurde eingefŸgt:)");
+		} else{
+			System.out.println("HinzufŸgen fehlgeschagen!");
+		}		
+		
 	}
-
 }
