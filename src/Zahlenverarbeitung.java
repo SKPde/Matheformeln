@@ -96,4 +96,7 @@ public class Zahlenverarbeitung {
 		double s = (a+b+c)/2;
 		return s*(s-a)*(s-b)*(s-c);
 	}
+	public static double flaecheQuadrat(double kantenlaenge){
+		return Math.pow(kantenlaenge, 2);
+	}
 }

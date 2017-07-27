@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Hauptprogramm {
 
 	public static void main(String[] args) {
-
+		System.out.println("test");
 		/*System.out.println(Zahlenverarbeitung.primzahl(777999));
 		System.out.println(Zahlenverarbeitung.findePrimzahl(8));
 		
@@ -21,10 +21,22 @@ public class Hauptprogramm {
 		//System.out.println(Zahlenverarbeitung.fakultaet(29));
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("Bitte Zahl eingeben: ");
-		System.out.println(Zahlenverarbeitung.berechneKreis(in.nextInt()));
+		
+		//System.out.print("Bitte Zahl eingeben: ");
+		/*System.out.println(Zahlenverarbeitung.berechneKreis(in.nextInt()));
 		System.out.println(Zahlenverarbeitung.loesePoly(7));
-		System.out.println(Zahlenverarbeitung.flaecheDreieck(5, 3, 7));
+		System.out.println(Zahlenverarbeitung.flaecheDreieck(5, 3, 7));*/
+		
+		Hashtest settest = new Hashtest();
+
+		
+		while(true){
+			System.out.print("Bitte Zahl eingeben: ");
+			settest.zahlhinzufuegen(in.nextInt());
+			System.out.println("Grš§e: " + settest.test.size());
+		}
+		
+	
 	}
 
 }
