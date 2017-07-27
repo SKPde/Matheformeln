@@ -1,9 +1,11 @@
+import java.util.HashMap;
 import java.util.HashSet;
 
 
 public class SetRechteck {
 	
-	private HashSet<Rechteck> rechtecke;
+	HashSet<Rechteck> rechtecke;
+	HashMap<Integer,Rechteck> rechtmap;
 	
 	public SetRechteck(){
 		rechtecke = new HashSet<Rechteck>();
