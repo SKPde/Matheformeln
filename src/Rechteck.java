@@ -20,26 +20,28 @@ public class Rechteck implements Comparable<Object> {
 	@Override
 	public int compareTo(Object compareObject) {
 		 // RŸckgabewert
-        int compareValue =-2;
+        //int compareValue =-2;
         // Typumwandlung zur Klasse Punkt
         Rechteck compareRechteck = (Rechteck)compareObject;
         // Vergleich auf Gleichheit
-        if(this.breite == compareRechteck.breite)
+        if(this.laenge == compareRechteck.laenge)
         {
             return 0;
         }
         // Vergleich auf kleiner
-        if(this.breite < compareRechteck.breite)
-        {
-            compareValue = -1;
-        }
+        //if(this.breite < compareRechteck.breite)
+        //{
+            //compareValue = -1;
+        //}
         // Vergleich auf grš§er
-        if(breite > compareRechteck.breite)
+        /*if(breite > compareRechteck.breite)
         {
             compareValue = 1;
-        }
+        }*/
         
-		return (int)(100*Math.random());
+		//return (int)(100*Math.random());
+        //return this.idrechteck;
+        return (int) this.laenge;
 	}
 	
 }

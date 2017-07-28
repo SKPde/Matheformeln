@@ -68,13 +68,16 @@ public class Hauptprogramm {
 		treetest.rechteckHinzufuegen(eck4);
 		treetest.rechteckHinzufuegen(eck2);
 		
-		TreeSet<Rechteck> baum = new TreeSet<Rechteck>();
-		baum.add(eck1);
-		baum.add(eck2);
-		baum.add(eck3);
+		System.out.println(treetest.testbaum);
 		
-		System.out.println(baum.size());
+		Object[] eckarray = new Object[treetest.testbaum.size()];
+		eckarray = treetest.testbaum.toArray();
 		
+		Rechteck eck5 =(Rechteck) eckarray[0];
+		 
+		System.out.println("Casteck, Breite: " + eck5.breite + " LŠnge: " + eck5.laenge);
+		
+		System.out.println(treetest.testbaum.ceiling(eck3).breite);
 	
 	}
 
